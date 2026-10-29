@@ -1,0 +1,195 @@
+# One entry per tool, entry plan only. render_table.py builds both README
+# tables from this file and computes answers per month, cost per 1,000
+# answers and per prompt noise. Never type those three by hand.
+#
+# answers_basis:
+#   stated    vendor publishes a monthly answer or scan cap, put it in `answers`
+#   computed  prompts x engines x runs per month (daily 30, weekly 4)
+#   credits   credits / credits_per_answer
+#   unknown   the unit cannot be turned into answers from public pages
+#
+# Facts from the AIclicks roundup (vendor pages verified August 2026) plus
+# cloro.dev/pricing checked 29 October 2026. Confirm before you buy.
+
+- id: aiclicks
+  name: AIclicks
+  url: https://aiclicks.io
+  kind: Dashboard plus execution agents
+  entry_plan: Starter
+  currency: "$"
+  price: 59
+  billing: monthly
+  engines: 3
+  engines_note: 3 of 10, you pick
+  collection: Not published
+  refresh: daily
+  prompts: 30
+  answers_basis: computed
+  api: Private API on Business, MCP server
+  output: Execution, publishing and outreach
+  trial: 3 days
+
+- id: qwairy
+  name: Qwairy
+  url: https://www.qwairy.co
+  kind: Dashboard
+  entry_plan: Starter
+  currency: "€"
+  price: 79
+  billing: monthly
+  engines: 10
+  engines_note: 10, no add ons
+  collection: Mixed, labelled per engine
+  refresh: not stated
+  prompts: 100
+  credits: 1300
+  answers_basis: unknown
+  api: REST API on Growth, €199
+  output: Briefs
+  trial: Free plan, 120 credits
+
+- id: scrunch
+  name: Scrunch AI
+  url: https://scrunch.com
+  kind: Dashboard plus CDN layer
+  entry_plan: Starter
+  currency: "$"
+  price: 300
+  billing: monthly, $250 billed yearly
+  engines: 4
+  engines_note: 4 (ChatGPT, Perplexity, AI Overviews, Copilot)
+  collection: Not published
+  refresh: not stated
+  prompts: 125
+  answers_basis: unknown
+  api: Data API on Enterprise only
+  output: Reports, page audits
+  trial: 7 days, no card
+
+- id: allmond
+  name: Allmond
+  url: https://allmond.app
+  kind: Dashboard
+  entry_plan: Starter
+  currency: "$"
+  price: 29
+  billing: monthly
+  engines: 4
+  engines_note: 4 (ChatGPT, Claude, Gemini, Perplexity)
+  collection: Live ChatGPT interface
+  refresh: weekly
+  samples_per_run: 4
+  answers: 240
+  answers_basis: stated
+  api: Not stated
+  output: Client reports, no login needed
+  trial: 7 days
+
+- id: rankprompt
+  name: Rank Prompt
+  url: https://rankprompt.com
+  kind: Dashboard plus content
+  entry_plan: Starter
+  currency: "$"
+  price: 49
+  billing: monthly
+  engines: 6
+  engines_note: 6, all on paid plans
+  collection: Not published
+  refresh: weekly
+  credits: 150
+  answers_basis: unknown
+  api: Not stated
+  output: Content and outreach, shared credit pool
+  trial: 7 days, 50 credits, card required
+
+- id: profound
+  name: Profound
+  url: https://www.tryprofound.com
+  kind: Dashboard plus content agents
+  entry_plan: Starter
+  currency: "$"
+  price: 99
+  billing: billed yearly
+  engines: 1
+  engines_note: 1 (ChatGPT only)
+  collection: Not published
+  refresh: daily
+  prompts: 50
+  answers: 1500
+  answers_basis: stated
+  api: No exports on Starter
+  output: Content agents, crawler analytics
+  trial: None on Starter
+
+- id: semrush
+  name: Semrush AI Visibility Toolkit
+  url: https://www.semrush.com/kb/1493-ai-visibility-toolkit
+  kind: SEO suite module
+  entry_plan: Standalone toolkit
+  currency: "$"
+  price: 99
+  billing: billed yearly, per domain
+  engines: 4
+  engines_note: 4, extra domains and seats $99 each
+  collection: Not published
+  refresh: daily
+  prompts: 25
+  answers_basis: computed
+  api: Not stated
+  output: Reports, AI search site audit
+  trial: None
+
+- id: seranking
+  name: SE Ranking
+  url: https://seranking.com
+  kind: SEO suite module
+  entry_plan: Entry suite plan
+  currency: "$"
+  price: 129
+  billing: monthly
+  engines: 4
+  engines_note: 4 (AI Overviews, AI Mode, ChatGPT, Perplexity)
+  collection: Not published
+  refresh: weekly
+  answers_basis: unknown
+  api: Not stated
+  output: Reports inside the SEO suite
+  trial: 14 days
+
+- id: peec
+  name: Peec AI
+  url: https://peec.ai
+  kind: Dashboard
+  entry_plan: Starter
+  currency: "$"
+  price: 95
+  billing: monthly
+  engines: 3
+  engines_note: 3, extra models from $35 each
+  collection: Live assistant interfaces
+  refresh: daily
+  prompts: 50
+  answers_basis: computed
+  api: API on Enterprise, MCP server
+  output: Reports
+  trial: 7 days
+
+- id: cloro
+  name: cloro
+  url: https://cloro.dev
+  kind: Raw answer API, no dashboard
+  entry_plan: Hobby
+  currency: "$"
+  price: 100
+  billing: monthly
+  engines: 9
+  engines_note: 9 surfaces, no Claude
+  collection: Engine surfaces, parsed to JSON
+  refresh: on demand
+  credits: 250000
+  credits_per_answer: 5
+  answers_basis: credits
+  api: The product is the API, Python and JS, MCP server
+  output: Raw JSON with sources and fan out queries
+  trial: Free plan, 500 credits a month

@@ -1,0 +1,10 @@
+{
+  "brand": "Lumora",
+  "aliases": ["Lumora", "lumora.io"],
+  "domains": ["lumora.io"],
+  "competitors": {
+    "Quillstack": ["Quillstack"],
+    "Orbitly": ["Orbitly", "orbitly.com"],
+    "Fenwick Ledger": ["Fenwick Ledger", "Fenwick"]
+  }
+}
