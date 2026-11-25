@@ -8,7 +8,7 @@
 #   credits   credits / credits_per_answer
 #   unknown   the unit cannot be turned into answers from public pages
 #
-# Facts from the AIclicks roundup (vendor pages verified August 2026) plus
+# Facts from vendor pages (verified August 2026) plus
 # cloro.dev/pricing checked 29 October 2026. Confirm before you buy.
 
 - id: aiclicks

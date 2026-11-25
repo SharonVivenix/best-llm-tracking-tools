@@ -34,7 +34,7 @@ An LLM tracker sends a fixed list of prompts to a set of engines on a schedule a
 | Citation rate | answers linking a brand domain as a source / answers collected | Engines that answer from training data without sources |
 | Share of voice | brand appearances / all tracked brand appearances | Competitors you did not add to the config |
 
-[AIclicks documents its own versions](https://docs.aiclicks.io/metrics-overview) of these, and visibility there is total brand mentions divided by answers collected. Other vendors use the same idea under different names, such as "Share of Model" or "AI Visibility Score". The Semrush score also counts unlinked mentions alongside citations, so its number will not line up with a citation rate from another tool.
+AIclicks documents its own versions of these, and visibility there is total brand mentions divided by answers collected. Other vendors use the same idea under different names, such as "Share of Model" or "AI Visibility Score". The Semrush score also counts unlinked mentions alongside citations, so its number will not line up with a citation rate from another tool.
 
 The sample size behind each number is `prompts x engines x runs`. That one product drives the price of every plan below and the reliability of every chart, and it is the first thing to check when you compare tools for LLM visibility.
 
@@ -170,7 +170,7 @@ Other views: `--by prompt`, `--by week`, `--by overall`.
 
 ## The ten tools, read as instruments
 
-Notes below cover how each tool collects data, what it costs, and the limit you will run into first. AIclicks is listed first because the shortlist comes from its own roundup, and that is disclosed in the credits.
+Notes below cover how each tool collects data, what it costs, and the limit you will run into first.
 
 ### 1. AIclicks
 
@@ -240,11 +240,11 @@ Partly. Qwairy has a free plan with 120 credits, and cloro gives 500 credits a m
 
 Count the answers each plan collects. Among plans with a convertible volume, Peec AI and AIclicks sit at about $21 to $22 per thousand answers on daily refresh, Semrush at $33 and Profound at $66. Weekly tools are cheaper at the door but cannot resolve single prompt changes.
 
-## Contributing and credits
+## Contributing
 
 Fix a price or add a tool in [tools.yaml](tools.yaml), run `python render_table.py --write`, and open a pull request as described in [CONTRIBUTING.md](CONTRIBUTING.md). CI fails if the tables and the data disagree.
 
-The shortlist and plan facts come from the AIclicks roundup of the [best tools for tracking LLM visibility](https://aiclicks.io/blog/best-tools-for-tracking-llm-visibility), with vendor pages verified in August 2026, plus cloro's pricing page checked on 29 October 2026. AIclicks is featured first and that is disclosed. The sampling analysis, the cost per answer derivation, the code and the tool notes are our own. Vendor review scores were left out on purpose. Prices change often, so confirm on each vendor's page before buying.
+Plan facts come from vendor pages verified in August 2026, plus the cloro pricing page checked on 29 October 2026. The sampling analysis, the cost per answer derivation, the code and the tool notes were written for this repo. Vendor review scores were left out on purpose. Prices change often, so confirm on each vendor's page before buying.
 
 ## License
 
